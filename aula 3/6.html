@@ -1,0 +1,32 @@
+<script>
+    let produto1_custo = parseInt(prompt("digite o custo do produto 1")) 
+    let produto1_venda = parseInt(prompt("digite o valor de venda do produto 1"))
+
+    let produto2_custo = parseInt(prompt("digite o custo do produto 2")) 
+    let produto2_venda = parseInt(prompt("digite o valor de venda do produto 2")) 
+
+    if( produto1_custo > produto1_venda){
+        alert("O produto 1 está com prejuizo")
+    }
+    else if(produto1_custo == produto1_venda){
+        alert("voce ficou no 0 com esse produto")
+    }
+    else{
+        alert("voce fez lucro com esse produto")
+    }
+
+    if( produto2_custo > produto2_venda){
+        alert("O produto 1 está com prejuizo")
+    }
+    else if(produto2_custo == produto2_venda){
+        alert("voce ficou no 0 com esse produto")
+    }
+    else{
+        alert("voce fez lucro com esse produto")
+    }
+
+    let media_custo = (produto1_custo + produto2_custo)/ 2 ;
+    let media_venda = (produto1_venda + produto2_venda)/ 2 ;
+
+    alert("sua media de custo foi "  + ((produto1_custo + produto2_custo)/ 2) + " e sua media de venda foi: " + media_venda);
+</script>

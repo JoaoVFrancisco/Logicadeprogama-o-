@@ -1,0 +1,19 @@
+<script>
+    //não está completa esse exercício
+    let nome_aluno = prompt("nome do aluno")
+    let nota_aluno1 = parseInt(prompt("digite a primeira nota do aluno"));
+    let nota_aluno2 = parseInt(prompt("digite a segunda nota do aluno"));
+    let nota_aluno3 = parseInt(prompt("digite a terceira nota do aluno"));
+
+    let media_nota = (nota_aluno1 + nota_aluno2 + nota_aluno3)/3 ;
+
+    if(media_nota <= 5){
+        alert(nome_aluno  + " reprovou")
+    }
+    else if(media_nota >= 7){
+        alert( nome_aluno + " passou")
+    }
+    else{
+        alert(nome_aluno +" recuperacao")
+    }
+</script>

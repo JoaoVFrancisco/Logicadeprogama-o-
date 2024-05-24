@@ -1,0 +1,21 @@
+<script>
+    let nota1 = parseInt(prompt("coloque a primeira nota"));
+    let nota2 = parseInt(prompt("coloque a segunda nota"));
+    let nota3 = parseInt(prompt("coloque a terceiro nota"));
+    let escolha = prompt("escolha entre aritmedia ou ponderada");
+    let media = 0 ;
+    let ponderada = 0 ;
+
+    switch(escolha){
+        case "aritmedia":
+            media = (nota1 + nota2 + nota3)/3 ; 
+            alert("a media seria " + media);
+        break;
+        case "ponderada":
+            ponderada = (nota1 + nota2 + nota3)/10 ;
+            alert("a ponderada seria " + ponderada) ;
+        break;
+        default:
+            alert("errado tente denovo")     
+    }
+</script>

@@ -1,0 +1,24 @@
+<script>
+    let nivel = prompt("digite seu nivel de profesor");
+    let horas = parseInt(prompt("deigite quantas horas vc trabalhou esse mes"));
+    let salario = 0;
+    
+    switch(nivel) {
+        case "1": 
+        alert("seu salario e 12,00 reais por aula/hora");
+        salario = horas*12
+        break;
+        case "2": 
+        alert("seu salario e 17,00 reais por aula/hora");
+        salario = horas*17
+        break;
+        case "3": 
+        alert("seu salario e 25,00 reais por aula/hora");
+        salario = horas*25
+        break;
+        default:
+            alert("nivel invalido");
+    }
+
+    alert("seu salario e " + salario);
+</script>

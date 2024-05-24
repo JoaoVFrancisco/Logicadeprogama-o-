@@ -1,0 +1,24 @@
+<script>
+    let nome = prompt("digite seu nome");
+    let gasto = parseInt(prompt("digite seu gasto de energia"));
+    let residencia = parseInt(prompt("digite seu tipo de residencia entre 1-Residência, 2-Comércio ou 3-Indústria"));
+    let valor_total = 0;
+
+    switch(residencia){
+        case 1 : 
+        alert("seu valor por KW/h e 0,60");
+        valor_total = gasto*0.60
+        break;
+        case 2 : 
+        alert("seu valor por KW/h e 0,48");
+        valor_total = gasto*0.48
+        break;
+        case 3 : 
+        alert("seu valor por KW/h e 2,29");
+        valor_total = gasto*1.29
+        break;
+        default:
+            alert("numero invalido")
+    }
+    alert(nome + " seus custo vai ser " + valor_total);
+</script>

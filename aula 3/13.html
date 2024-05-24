@@ -1,0 +1,21 @@
+<script>
+    let nome = prompt("digite o nome do aluno");
+    let nota = parseInt(prompt("digite a nota trimestral do aluno"));
+    
+    if(nota >= 8  && nota <= 10){
+        classificação = "A" 
+    }
+    else if(nota >= 7 && nota <= 8){
+        classificação = "B"
+    }
+    else if(nota >= 6 && nota <= 7){
+        classificação = "C"
+    }
+    else if(nota >= 5 && nota <= 6){
+        classificação = "D"
+    }
+    else{
+        classificação = "R"
+    }
+    alert(nome + " sua classificação foi " + classificação)
+</script>

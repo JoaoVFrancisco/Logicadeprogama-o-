@@ -1,0 +1,26 @@
+<script>
+    let produto = parseInt(prompt("ditige o codigo do produto"));
+    let quantidade = parseInt(prompt("digite a quantidade"));
+    let preçototal = 0
+
+    if(produto === 1001){
+     preçototal = quantidade * 5.32
+    }
+    else if(produto === 1324){ 
+        preçototal = quantidade * 6.45 
+    }
+    else if(produto === 6548){ 
+         preçototal = quantidade * 2.37 
+    }
+    else if(produto === 987){ 
+     preçototal = quantidade * 5.32 
+    }
+    else if(produto === 7623){ 
+     preçototal = quantidade * 6.45 
+    }
+    else{
+        alert("codigo invalido")
+    };
+
+    alert("o preço total vai ser de" + preçototal)
+</script>

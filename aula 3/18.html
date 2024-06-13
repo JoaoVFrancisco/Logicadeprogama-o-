@@ -1,0 +1,33 @@
+<script>
+    let cargo = prompt("Digite seu cargo");
+    let salarioantigo =  parseFloat(prompt("Digite seu solario atual"));
+    let salarionovo = 0;
+    let diferença = 0;
+
+    switch(cargo){
+        case "gerente":
+        salarionovo = salarioantigo * 1.10
+        alert("seu novo salario vai ser" + salarionovo);
+        diferença = salarionovo - salarioantigo 
+        alert("a diferença do novo salario para o antigo e de " + diferença)
+        break;
+        case "engenheiro":
+        salarionovo = salarioantigo * 1.20
+        alert("seu novo salario vai ser" + salarionovo);
+        diferença = salarionovo - salarioantigo 
+        alert("a diferença do novo salario para o antigo e de " + diferença)
+        break;
+        case "tecnico":
+        salarionovo = salarioantigo * 1.30
+        alert("seu novo salario vai ser" + salarionovo);
+        diferença = salarionovo - salarioantigo 
+        alert("a diferença do novo salario para o antigo e de " + diferença)
+        break;
+        default:
+        salarionovo = salarioantigo * 1.40
+        alert("seu novo salario vai ser" + salarionovo);
+        diferença = salarionovo - salarioantigo 
+        alert("a diferença do novo salario para o antigo e de " + diferença)
+        break;
+    }
+</script>

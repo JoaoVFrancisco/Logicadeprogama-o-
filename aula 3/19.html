@@ -1,3 +1,70 @@
 <script>
-    let pessoa = prompt("")
+    let sexo = prompt("Qual seu sexo M/F?");
+    let altura = parseFloat(prompt("qual sua altura?"));
+    let idade = parseInt(prompt("qual sua idade?"));
+    let peso_ideal = 0;
+
+    switch(sexo){
+        case "M" :
+         if(altura > 1.70){
+            if(idade <= 20 ){
+                peso_ideal = (72.7*altura)-58;
+                alert("seu peso ideal é " + peso_ideal);
+            }
+            else if(idade >= 21 && idade <= 39){
+                peso_ideal = (72.7*altura) - 53
+                alert("seu peso ideal é " + peso_ideal);
+            }
+            else if(altura >= 40){
+                peso_ideal = (72.7*altura) - 45
+                alert("seu peso ideal é " + peso_ideal);
+            }
+            else{
+                alert("erro")
+            }
+         }
+        else {
+            if(idade <= 40){
+                peso_ideal = (72.7*altura) - 50
+                alert("seu peso ideal é " + peso_ideal)
+            }
+            else if(idade > 40){
+                peso_ideal = (72.7*altura) - 58;
+                alert("seu peso ideal é " + peso_ideal)
+            }
+            else{
+                alert("erro")
+            }
+        }
+        break;
+        case "F" :
+            if(altura > 1.50){
+                if(idade){
+                    peso_ideal = (61.1*altura) - 44.7
+                    alert("seu peso ideal é " + peso_ideal)
+                }
+                else{
+                    alert("erro")
+                }
+            }    
+            else if(altura <= 1.50){
+                if(idade >= 35){
+                    peso_ideal = (61.1*altura) - 45
+                    alert("seu peso ideal é " + peso_ideal)
+                }
+                else if(idade < 35){
+                    peso_ideal = (61.1*altura) - 49
+                    alert("seu peso ideal é " + peso_ideal)
+                }
+                else{
+                    alert("erro")
+                }            
+            }
+            else{
+                alert("erro")
+            }
+        break;
+        default:
+            alert("erro")
+    }
 </script>

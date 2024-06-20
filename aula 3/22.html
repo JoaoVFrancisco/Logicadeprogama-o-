@@ -1,0 +1,22 @@
+<script>
+    let metrosquadrados = parseInt(prompt("Quantos metros voce ira pintar?"));
+    let escolha = prompt("escolha entre galão ou lata")
+    let galãopreço = 25
+    let lataspreços = 80
+    let galãolitros = 3.6
+    let lataslitro = 18
+    let metrosfinais = metrosquadrados / galãolitros;
+    
+    switch(escolha){
+        case "galão":
+            alert("vc poderar pintar " + (metrosfinais) + "metros" + "\n e o custo que saira se voce compra o galão e " + ( metrosfinais/galãopreço));
+        break;
+
+        case "lata":
+        break;
+
+        default:
+            alert("escolha entre galão e lata porfavor")
+    }
+
+</script>

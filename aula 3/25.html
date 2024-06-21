@@ -1,0 +1,19 @@
+<script>
+    let puliçãoindice = parseFloat(prompt("qual o indice de de pulição hoje?"));
+
+    if(puliçãoindice <= 0.3 && puliçãoindice < 0.4){
+        alert("o 1º grupo terão que suspender suas atividades \n motivos: aumento no indice de puluição");
+    }
+    else if(puliçãoindice <= 0.4 && puliçãoindice < 0.5){
+        alert("o 1º e 2º grupo terão que suspender suas atividades \n motivos: aumento no indice de puluição")
+    }
+    else if(puliçãoindice <= 0.5){
+        alert("os 3 grupos terão que suspender suas atividades \n motivos: aumento no indice de puluição")
+    }
+    else if(puliçãoindice <= 0.05 && puliçãoindice >= 0.25){
+        alert("o indice de poluição está aceitavel")
+    }
+    else{
+        alert("erro")
+    }
+</script>

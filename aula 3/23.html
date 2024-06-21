@@ -1,0 +1,17 @@
+<script>
+    let horaInicio = parseInt(prompt("digite a hora que começou o jogo"));
+    let horafinal = parseInt(prompt("digite a hora que acabou o jogo"));
+    let horasduração = horafinal - horaInicio;
+    
+    if(horasduração <= 24 && horasduração > 0){
+        alert("a duração de jogabilidade foi de " + horasduração + " horas.")
+    }
+    else if(horasduração == 0){
+        alert("a duração de jogabilidade foi de 24 horas.")
+    }
+    else{
+        alert("o duração de jogabilidade foi mais de 24 horas \n logo mais de um dia.")
+    }
+
+    
+</script>

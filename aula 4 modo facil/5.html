@@ -1,0 +1,32 @@
+<script>
+    let altura = 0;
+    let altura2m = 0;
+    let alturamedia = 0;
+
+    for(let x = 1; x <= 10; x++){
+        altura = parseFloat(prompt("digite sua altura"))
+        
+
+        if(altura >= 2){
+            altura = altura2m
+            altura2m++
+            
+            
+        } 
+        else if(altura >= 1.60 && altura < 2){
+            altura += alturamedia
+            alturamedia++
+            
+            
+        }
+        else{
+            altura += alturamedia
+            alturamedia++
+            
+            
+        }
+
+        alert("a quantidade de pessoas com mais de 2 metros é " + altura2m)
+        alert(" já a quantidade de pessoas na media é " + alturamedia)
+    }
+</script>

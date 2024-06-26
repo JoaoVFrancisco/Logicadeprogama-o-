@@ -1,0 +1,11 @@
+<script>
+    let vezes = parseInt(prompt("digite quantas vezes quer jogar o dado"));
+    resultado = 0;
+    
+    for(let x = 0; x < vezes; x++){
+        resultado = Math.floor(Math.random() * 6) + 1;
+        
+        
+        alert("vc jogou o dado " + vezes + " os resultados foram " + resultado);
+    }
+</script>

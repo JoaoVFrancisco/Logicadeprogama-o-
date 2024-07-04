@@ -1,3 +1,17 @@
 <script>
-    let
+    let numero = 0
+
+    while(true){
+        numero = parseInt(prompt("digite um numero e para sair um numero negativo"));
+
+        if(numero >= 0 && numero <= 25 || numero >= 51 & numero <= 77){
+            alert("seu numero esta entre 0-25 e 51-75")
+        }
+        else{
+            alert("seu numero não esta no intervalo de 0-25 e 51-75")
+        }
+        if(numero < 0){
+            break
+        }
+    }
 </script>

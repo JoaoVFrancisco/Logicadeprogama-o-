@@ -1,0 +1,20 @@
+<script>
+    let altura = [];
+    let doismetros = 0;
+    let alturamedia = 0;
+
+    for(let i = 1; i = 20; i++){
+        altura.push(parseFloat(prompt("digite a altura")));
+
+        if(altura >= 2.0){
+            alert("esse pessoa tem 2 metros ou mais")
+            doismetros++
+        }
+        if(altura >= 1.70 && altura < 2){
+            alert("essa pessoa esta na media")
+            alturamedia++
+        }
+        alert("o total de pessoas na media é de " + alturamedia)
+        alert("o total de pessoas com 2 metros ou mais e de " + doismetros)
+    }
+</script>

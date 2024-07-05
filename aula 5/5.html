@@ -1,3 +1,26 @@
 <script>
-    
+    let quantidadepessoas = parseInt(prompt("Digite quantas pessoas quer colocar"))
+    let apta = 0;
+    let napta = 0;
+
+    for(let i = 0; i < quantidadepessoas; i++){
+        let n = []
+        let nome = prompt("digite o nome da pessoa " + (i+1));
+        let idade = parseInt(prompt("digite a idade " + (i+1)));
+        let sexo = prompt("qual o sexo da pessoa M/F? "+ (i+1));
+        let saude = prompt("a saude e boa S/N? " + (i+1))
+        n.push(nome, idade, sexo, saude)
+
+        if(idade >= 18 && saude == "S"){
+        alert("a pessoa esta apta");
+        apta++
+    }
+    else{
+        alert("não esta apta")
+        napta++
+    }
+
+    alert("a quantidade de pessoas aptas foi de " + apta);
+    alert("a quantidade de pessoas não aptas foi de " + napta);
+    }
 </script>

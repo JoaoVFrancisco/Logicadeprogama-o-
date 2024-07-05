@@ -1,0 +1,16 @@
+<script>
+    let tudo = [];
+    let nomeBanda = [];
+    let tipoBanda = [];
+    let numerointegrantes = [];
+    let avalição = [];
+
+    for(let i = 1; i <= 5; i++){
+        nomeBanda.push(prompt("digite o nome da banda"));
+        tipoBanda.push(prompt("digite o tipo de musica dela"));
+        numerointegrantes.push(parseInt(prompt("digite o numero de integrantes da banda")));
+        avalição.push(parseInt(prompt("digite um nota de 1 a 5 o quanto voce gosta da banda")));
+        tudo.push(nomeBanda, tipoBanda, numerointegrantes, avalição)
+        alert("seus dados foram " + tudo)
+    }
+</script>

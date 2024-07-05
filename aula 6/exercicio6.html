@@ -1,3 +1,182 @@
 <script>
-    
+   puxarDeveres()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   function puxarDeveres(){
+    let deveres = parseInt(prompt("escolha um dever de 1 a 9"));
+    switch(deveres){
+        case 1:
+            exercicio1()
+        break;
+        case 2:
+            exercicio2()
+        break;
+        case 3:
+            exercicio3()
+        break;
+        case 4:
+            exercicio4()
+        break;
+        case 5:
+            exercicio5()
+        break;
+        case 6:
+            exercicio6()
+        break;
+        case 7:
+            exercicio7()
+        break;
+        case 8:
+            exercicio8()
+        break;
+        case 9:
+            exercicio9()
+        break;
+        default:
+            alert("erro");
+    }
+   }
+
+    function exercicio1(){
+        alert("joao Victor Matos");
+        return puxarDeveres()
+    }
+
+    function exercicio2(){
+        let nome = "joao Victor Matos"
+        alert(nome)
+        return puxarDeveres()
+    }
+    function exercicio3(){
+        let numero1 = parseInt(prompt("digite um numero"));
+        let numero2 = parseInt(prompt("digite outro numero"));
+        let simbolo = prompt("escolha entre soma(+), subtração(-), multiplicação(*) ou divisão(/)");
+        let resultado = 0;
+
+        switch(simbolo){
+            case "+":
+                resultado = numero1 + numero2;
+                alert(resultado)
+            break;
+            case "-":
+                resultado = numero1 - numero2;
+                alert(resultado)
+            break;
+            case "*":
+                resultado = numero1 * numero2;
+                alert(resultado)
+            break;
+            case "/":
+                resultado = numero1 / numero2;
+                alert(resultado)
+            break;
+            default: 
+            alert("erro")
+        }
+        return puxarDeveres()
+    }
+    function exercicio4(){
+        let palavras = ["dota" , "lol"];
+        palavras.concat()
+        alert(palavras)
+        return puxarDeveres()
+    }
+    function exercicio5(){
+        let idade = parseInt(prompt("digite sua idade"))
+        if(idade >= 18){
+            alert("voce maior de idade")
+        }
+        else{
+            alert("voce e menor de idade")
+        }
+        return puxarDeveres()
+    }
+    function exercicio6(){
+        let numero = parseInt(prompt("digite um numero"));
+
+        if(numero % 2 == 0){
+            alert("esse numero e par")
+        }
+        else{
+            alert("esse numero e impar")
+        }
+        return puxarDeveres()
+    }
+    function exercicio7(){
+        let numero = parseInt(prompt("digite um numero"));
+
+        for(let i = 0; i <= numero; i++){
+            i+
+            alert(i)
+        }
+        return puxarDeveres()
+    }
+    function exercicio8(){
+        let idade = 0
+        let maioridade = 0
+        let menosidade = 0
+
+        while(true){ 
+        idade = parseInt(prompt("digite uma idade e digite zero para fechar"))
+ 
+        if(idade >= 18){
+            maioridade++
+        }
+        else{
+            menosidade++
+        }
+        alert("temos " + maioridade + " pessoas maior de idade");
+        alert("temos " + menosidade + " pessoas menor de idade");
+        if(idade == 0){
+            break;
+            return 
+        }
+    }
+    return puxarDeveres()
+    }
+    function exercicio9(){
+        let numero = []
+        let impar = 0;
+        let par = 0;
+        let x = parseInt(prompt("digite um numero de vezes"));
+        
+        for(let i = 1; i <= x; i++){
+        numero = parseInt(prompt("digite um numero para o teste"));
+        if(numero % 2 == 0){
+            alert("esse numero e par")
+            par++
+        }
+        else{
+            alert("esse numero e impar")
+            impar++
+        }
+        alert("total de numeros impar e " + impar + " \n total de numero par " + par)
+    }
+    return puxarDeveres()
+    }
 </script>

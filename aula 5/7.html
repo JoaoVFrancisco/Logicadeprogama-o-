@@ -1,0 +1,18 @@
+<script>
+    let n = parseInt(prompt("quantos clientes são?"));
+    let saldo = []
+    let contas = []
+    let contasaldo = []
+    let negcontas = 0
+
+    for(let i = 0; i < n; i++){
+        contas.push(prompt("digite o nome do usuario da conta" + (i+1)));
+        saldo.push(parseFloat(prompt("digite o saldo das conta \n conta"+(i+1) )));
+
+        if(saldo < 0){
+            alert("esta conta esta com saldo negativo")
+            negcontas++
+        }
+        alert("temos " + contas.length + " contas e " + negcontas + " são negativas")
+    }
+</script>
